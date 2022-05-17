@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Patient Registration form </title>
+    <style>
+        .bor {
+            border-color: Black;
+            border-style: solid;
+            border-width: 2px;
+            height: 1030px;
+            width: 1000px;
+        }
+        input {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: groove;
+            background-color: #eee;
+        }
+        label {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align:center;" > Patient Registration form</h3>
+    <form>
+        <div class="bor" style="margin-left:220px; margin-top:0px">
+            <label> Patient's Last Name:</label>
+            <input type="text" id="lname" placeholder="Lastname" style="margin-top:10px; margin-left:10px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>
+                <label>First Name:</label>
+                <input type="text" id="fname" placeholder="Firstname" size="30" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+                <label>Midle Name:</label>
+                <input type="text" id="mname" placeholder="Middlename" />
+            </span>
+            <div>
+                <label> Patient's Home Phone number: </label>
+                <input type="text" id="hphonenumber" placeholder="Homephonenumber" style="margin-top:10px; margin-left:10px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    <label>Alternate Phone number:</label>
+                    <span>
+                        <input type="checkbox" id="altphnum_cell" name="altphnum_cell" value="Yes" />
+                        <label for="altphnum_cell" /> cell </label>
+                        <input type="checkbox" id="work" name="work" value="No" />
+                        <label for="work" /> work </label>
+                    </span>
+                    <input type="text" id="altphonenumber" placeholder="Alternatephonenuber" />
+                </span>
+            </div>
+            <hr />
+            <div>
+                <label> E-mail Address:</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" size="70" />
+                <hr />
+            </div>
+
+            <div>
+                <label>Address:</label>
+                <input type="text" id="address" placeholder="address" size="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label >Apt.# :</label>
+                <input type="text" id="aptno" placeholder="Aptno" size="40" />
+            </div>
+            <br />
+
+            <div>
+                <label>City: </label>
+                <input type="text" id="city" placeholder="city" size="30" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    <label style="margin-top:10px"> State: </label>
+                    <input type="text" id="state" placeholder="state" size="30" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    <label margin-top:10px">Zip Code: </label>
+                    <input type="text" id="zipcode" placeholder="zipcode" size="30" />
+                </span>
+            </div>
+            <hr />
+            <div>
+                <label>Date of Birth:</label>
+                <input type="date" id="dob" placeholder="DOB" />&nbsp;&nbsp;&nbsp;
+                <label >Age:</label>
+                <input type="number" id="age" placeholder="Age" />
+                <label > Sex: </label>
+                <input type="checkbox" id="male" value="M" />M
+                <input type="checkbox" id="male" placeholder="F" />F &nbsp;&nbsp;
+                <label >Social Security Number:</label>
+                <input type="number" id="ssn" placeholder="ssn" />
+            </div>
+            <hr />
+            <div>
+                <label > Marital Status: </label>
+                <input type="checkbox" id="Married" value="Married" />Married &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="single" value="single" />Single &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="Divorced" value="Divorced" />Divorced&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="Widowed" value="Widowded" />Widowed
+            </div>
+            <hr />
+            <div>
+                <label > Patient's Employer: </label>
+                <input type="text" id="pemployer" placeholder="Patient'semployer" />&nbsp;&nbsp;&nbsp;
+                <label > Employment status: </label>
+                <input type="checkbox" id="fulltime" value="fulltime" />Full time
+                <input type="checkbox" id="partime" value="partime" />Partime
+                <input type="checkbox" id="unemployed" value="unemployed" />Unemployed
+                <input type="checkbox" id="retired" value="retired" />Retired
+                <input type="checkbox" id="student" value="student" />Student
+                <input type="checkbox" id="other" value="other" />Other
+            </div>
+            <hr />
+            <div>
+                <label > Emergency Contact: </label>
+                <input type="text" id="emercontact" placeholder="Emergencycontact" size="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label > Relationship to Patient: </label>
+                <input type="text" id="relatopatient" placeholder="Relatopatient" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <br />
+            <br />
+            <div>
+                <label > Address:  </label>
+                <input type="text" id="address" placeholder="Address" size="70" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label > Phone Number:	 </label>
+                <input type="text" id="phonnumber" placeholder="Phonnumber" />
+            </div>
+            <hr />
+            <div>
+                <h4 style="margin-left:10px;"> INSURANCE INFORMATION  </h4>
+                <label > Primary Insurance:  </label>
+                <input type="text" id="priminsu" size="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label > Secondary Insurance:  </label>
+                <input type="text" id="seconinsu" size="40" />
+            </div>
+            <br />
+            <div>
+                <label > Patient's subscriber/Policy Holder:</label>
+                <input type="checkbox" id="policyholder" value="policyholder" />Y
+                <input type="checkbox" id="p" value="p" />N  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label > Patient's subscriber/Policy Holder: </label>
+                <input type="checkbox" id="policyholder" value="policyholder" />Y
+                <input type="checkbox" id="p" value="p" />N
+            </div>
+            <hr />
+            <div><h4 style="margin-left:50px;"> INSURED INFORMATION (If other than patient).We will request to scan your ID and insurance card</h4></div>
+            <div>
+                <label > Subscriber/Policy Holder:  </label>
+                <input type="text" id="subscriber" placeholder="Subscriber" size="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label > Relationship to Patient </label>
+                <input type="text" id="relatopatient" placeholder="Relatopatient" size="35" />
+            </div>
+            <br />
+            <div>
+                <label > Address: </label>
+                <input type="text" id="address" placeholder="Address" size="90" />
+            </div>
+            <br />
+            <div>
+                <label > Social security Number: </label>
+                <input type="number" id="ssn" placeholder="ssn" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <label > Date of Birth: </label>
+                <input type="date" id="dob" placeholder="DOB" size="40" />
+            </div>
+            <br />
+            <div>
+                <label > His or Her Employer: </label>
+                <input type="text" id="employer" placeholder="Employer" size="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label > Work Phone NUmber: </label>
+                <input type="text" id="Workphno" placeholder="Workphno" size="40" />
+
+            </div>
+            <hr />
+            <div>
+                <h4 style="margin-left:10px;"> Release of Information </h4>
+                <p style="margin-left:30px;"> I hereby give permission to the person(s) listed below to recieve information about the care of the above named patient.</p>
+            </div>
+            <div>
+                <label style="margin-left:30px;"> Name(s)	: </label>
+                <input type="text" id="name" placeholder="Name" />
+                <label style="margin-left:30px;"> Relationship to Patient: </label>
+                <input type="text" id="relatopatient" />
+            </div>
+            <hr />
+            <div>
+                <h5 style="margin-left:10px;">Inova Medical Group reserves the right to charge a fee for any scheduled visits that are:</h5>
+            </div>
+            <div>
+                <ol>
+                    <li>
+                        Cancelled with less than 24 hours notice
+                    </li>
+                    <li>
+                        Are missed without calling to cancel(no show)
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <p style="margin-left:10px;"> Cancellation fee schedule: New Patient $50.00: Established Patient $335.00 </p>
+            </div>
+            <div>
+                <label > Patient or Guardian Signature: </label>
+                <input type="text" id="signature" placeholder="Signature" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label > Date: </label>
+                <input type="text" id="date" placeholder="Date" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
